@@ -1,0 +1,21 @@
+{
+    "short_name": "HHZ",
+    "name": "HulaHula zone",
+    "icons": [
+        {
+            "src": "/zona/public/images/app/hulahula_logo_192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/zona/public/images/app/hulahula_logo_512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": "/zona/login",
+    "background_color": "#a02f67",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#a02f67"
+}

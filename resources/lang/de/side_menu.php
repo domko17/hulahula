@@ -1,0 +1,26 @@
+<?php
+
+return [
+	'Languages' => "Sprachen",
+	'Users' => "Users",
+	'Lections' => "Stunden",
+	'Emails' => "E-Mails",
+	'profile' => "Mein Konto",
+	'dashboard' => "Dashboard",
+	'messages' => "Hula Chat",
+	'star_orders' => "Bestellungen",
+	'teachers' => "Lehrer",
+	'contact_us' => "Kontakt auf uns",
+	'word_cards' => "Quizkarten",
+	'gift_codes' => "Geschenkgutscheine",
+	'guests' => "Gäste",
+	'students' => "Studenten",
+	'materials' => "Materialien",
+	'my_students' => "Meine Studenten",
+	'meetings' => "Besprechungen",
+	'banners' => "Werbebanner",
+	'survey' => "Fragebogen",
+	'' => "",
+	'translations' => "Übersetzungen",
+	'feedback' => "Feedback",
+];

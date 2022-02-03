@@ -1,0 +1,26 @@
+<?php
+
+return [
+	'Languages' => "Languages",
+	'Users' => "System Users",
+	'Lections' => "Lessons",
+	'Emails' => "Email queue",
+	'profile' => "My profile",
+	'dashboard' => "Dashboard",
+	'messages' => "Write us",
+	'star_orders' => "Orders",
+	'teachers' => "Lecturers",
+	'contact_us' => "Contact us",
+	'word_cards' => "Quiz flashcards",
+	'gift_codes' => "Gift vouchers",
+	'guests' => "Guests",
+	'students' => "Students",
+	'materials' => "Study materials",
+	'my_students' => "My students",
+	'meetings' => "Meetings",
+	'banners' => "Add banners",
+	'survey' => "Survey",
+	'' => "",
+	'translations' => "Translations",
+	'feedback' => "Evaluation of lecturers",
+];

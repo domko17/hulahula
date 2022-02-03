@@ -1,0 +1,28 @@
+<?php
+
+return [
+	'failed' => "These credentials do not match our records.",
+	'throttle' => "Too many login attempts. Please try again in :seconds seconds.",
+	'login_welcome_unknown_greeting' => "Welcome! Let's get started!",
+	'login_welcome_unknown_message' => "Please <span class="text-primary font-weight-bold">Sign In</span> to continue.",
+	'login_welcome_known_greeting' => "Welcome back, :Name!",
+	'login_welcome_known_message' => "It's nice to see you again. Please <span class="text-primary font-weight-bold">Sign In</span> to continue.",
+	'password_reset_welcome_unknown_greeting' => "Welcome, lost your password?",
+	'password_reset_2_welcome_unknown_greeting' => "Welcome, let's reset your password?",
+	'password_reset_welcome_unknown_message' => "No worries, give us your email address and we will send you password reset link.",
+	'password_reset_2_welcome_message' => "You are only one step away from your new password, you can set it in the form below.",
+	'password_reset_welcome_known_message' => "Oh, looks like you forgot your password. No worries, give us your email address and we will send you password reset link.",
+	'password_reset_link_sent' => "We have sent you an email with link where you can reset your password. (If you cant find it, please check spam folder)",
+	'register_welcome_greeting' => "New here?",
+	'register_welcome_message' => "Signing up is easy. Just fill out this form!",
+	'sign_in' => "Sign In",
+	'sign_up' => "Sign Up",
+	'send_pwd_reset_link' => "Send password reset link",
+	'reset_password' => "Reset password",
+	'keep_signed_in' => "Keep me signed in",
+	'forgot_pass' => "Forgot your password?",
+	'connect_by_fb' => "Connect using Facebook",
+	'no_account' => "Don't have an account?",
+	'already_has_account' => "Already have an account?",
+	'gdpr_consent' => "I agree to all Terms & Conditions",
+];

@@ -1,0 +1,25 @@
+<?php
+
+return [
+	'Languages' => "Jazyky",
+	'Users' => "Systémoví používatelia",
+	'Lections' => "Hodiny",
+	'Emails' => "Email fronta",
+	'profile' => "Môj profil",
+	'dashboard' => "Dashboard",
+	'messages' => "Napíšte nám",
+	'star_orders' => "Objednávky",
+	'teachers' => "Učitelia",
+	'contact_us' => "Kontakty",
+	'word_cards' => "Kvíz kartičky",
+	'gift_codes' => "Darčekové poukážky",
+	'guests' => "Hostia",
+	'students' => "Študenti",
+	'materials' => "Materiály",
+	'my_students' => "Moji študenti",
+	'meetings' => "Porady",
+	'banners' => "Reklamné banery",
+	'survey' => "Dotazník",
+	'translations' => "Preklady",
+	'feedback' => "Hodnotenia lektorov",
+];

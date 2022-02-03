@@ -1,0 +1,58 @@
+.event-styled .day {
+    border-radius: 10px;
+}
+
+.div_dots {
+    display: flex;
+    justify-content: center;
+}
+
+.event-free-classes .div_free::after {
+    content: "\A";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #1bcfb4;
+    float: left;
+    margin: 2px;
+}
+
+.event-taken-classes .div_taken::after {
+    content: "\A";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fe7c96;
+    float: left;
+    margin: 2px;
+}
+
+.event-taken-classes-teacher .div_taken::after {
+    content: "\A";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #198ae3;
+    float: left;
+    margin: 2px;
+}
+
+.event-meeting .div_meeting::after {
+    content: "\A";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #a02f67;
+    float: left;
+    margin: 2px;
+}
+
+.event-past-class .div_past::after {
+    content: "\A";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #a4a2a1;
+    float: left;
+    margin: 2px;
+}

@@ -1,0 +1,33 @@
+<?php
+
+return [
+	'title' => "Hlavný názov",
+	'description' => "Popis",
+	'toggle_active' => "Prepnúť aktívnosť banneru",
+	'active' => "Aktívny",
+	'type' => "Typ",
+	'type_1' => "Text",
+	'type_2' => "Obrázok",
+	'type_3' => "YouTube video",
+	'bg_color' => "Farba pozadia",
+	'bg_purple' => "Fialová (Naša farba)",
+	'bg_blue' => "Modrá",
+	'bg_yellow' => "Žltá",
+	'bg_red' => "Červená",
+	'bg_green' => "Zelená",
+	'bg_silver' => "Strieborná",
+	'bg_black' => "Tmavo sivá",
+	'video_url' => "Odkaz na YT video",
+	'preview' => "Ukážka banneru",
+	'ext_url' => "Externý odkaz",
+	'visible_to' => "Viditeľný pre",
+	'visibility_roles_tooltip' => "Zvoľte prosím aspoň jednu rolu. Na rolu 'Hosť' sa ďalej nebudú aplikovať jazykové natavenia",
+	'visibility_languages_tooltip' => "Ak nezvolíte žiadny jazyk, banner sa
+                                                   zobrazí rolám celej školy. Ak ho zvolíte, bude sa zobrazovať iba                                                   rolám z daného jazyka/jazykov",
+	'visible_to_all' => "Pre všetkých užívateľov",
+	'visible_custom_select' => "Vlastný výber skupín",
+	'visible_custom_user' => "Jednotliví užívatelia",
+	'create_new' => "Vytvoriť nový banner",
+	'has_image_hint' => "Ak chcete ponechať obrázok nechajte toto pole prázdne.",
+	'' => "",
+];

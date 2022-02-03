@@ -1,0 +1,38 @@
+<?php
+
+return [
+	'ok_student_signed_up' => "Erfolg: Sie sind dieser Unterrichtsstunde beigetreten",
+	'err_lecture_info_not_edited' => "Info wurde nicht geändert",
+	'err_lecture_info_not_edited_past_lesson' => "Fehler: Info wurde nicht geändert | Die Unterrichtsstunden in der Vergangenheit können nicht bearbeitet werden",
+	'err_lecture_info_not_edited_unauthorized' => "Fehler: Info wurde nicht geändert | unberechtigte Änderung",
+	'ok_lecture_info_changed' => "Erfolg: Info wurde geändert",
+	'err_form_not_filled_correctly' => "Fehler: Formular wurde schlecht ausgefüllt",
+	'ok_group_lecture_created' => "Erfolg: Gruppenunterrichtsstunde wurde erstellt",
+	'err_cant_teach_this_lesson' => "Fehler: Sie können nicht der Lehrer dieser Unterrichtsstunde werden",
+	'err_cant_teach_this_lesson_teacher_assigned' => "Fehler: Sie können nicht der Lehrer dieser Unterrichtsstunde werden | Es wurde schon nämlich ein Lehrer zu dieser Unterrichtsstunde zugewiesen",
+	'err_cant_teach_this_lesson_you_assigned' => "Fehler: Sie unterrichten schon diese Unterrichtsstunde",
+	'ok_you_teach_this_lesson' => "Erfolg: Sie sind der Lehrer während dieser Unterrichtsstunde",
+	'ok_you_sub_teach_this_lesson' => "Erfolg: Sie sind der vertretende Lehrer für diese Unterrichtsstunde",
+	'err_you_dont_teach_this_lesson' => "Fehler: Sie unterrichten diese Unterrichtsstunde nicht",
+	'ok_you_no_longer_teach_this_lesson' => "Erfolg: Sie unterrichten diese Unterrichtsstunde nicht mehr",
+	'err_cant_unassign_you_not_sub_teacher' => "Fehler: Sie sind kein vertretender Lehrer für diese Unterrichtsstunde",
+	'ok_unassigned_as_sub_teacher' => "Erfolg: Sie haben sich als der vertretende Lehrer aus der Unterrichtsstunde abgemeldet",
+	'err_wrong_old_password' => "Fehler: Das alte Passwort wurde schlecht eingegeben",
+	'ok_profile_updated' => "Erfolg: Ihr Profil wurde geändert",
+	'ok_teaching_hour_added' => "Erfolg: Präferenz hinzugefügt",
+	'ok_teaching_hour_removed' => "Erfolg: Präferenz gelöscht  | :counter abgesagte Stunden, :counter2 Stunden bleiben noch (Kursteilnehmer)",
+	'guest_welcome' => "Ich begrüße dich bei uns in HulaHula. Du bist gerade eben in unserem System als Gast angemeldet. Du kannst dich hier umsehen
+                    und mehr über Fremdsprachen, die wir hier unterrichten, erfahren. Falls du an einer Sprache interessiert wärest, zögere nicht und gib
+                    einem von unseren Administratoren Bescheid und bitte sie um eine kostenlose Unterrichtsstunde :) Den Kontakt auf Administratoren findest du in der Sektion",
+	'lecture_un_assign_student_late' => "Sie können sich von der Unterrichtsstunde nicht mehr abmelden, weil die innerhalb nächsten 24 Stunden anfängt.",
+	'lecture_un_assign_student_not_attending' => "Student (:name) ist dieser Unterrichtsstunde nicht beigetreten.",
+	'lecture_un_assign_student_star_returned' => "Erfolg, Sternchen wurde zurückgegeben.",
+	'lecture_canceled' => "Unterrichtsstunde abgesagt. Grund: :reason",
+	'teachers_note_saved' => "Notiz wurde gespeichert",
+	'err_cant_save_uploaded_file' => "Es ist ein unvorhersehbarer Fehler während Speichern der Datei aufgetreten.",
+	'err_required_file_not_sent' => "Fehler: die gewünschte Datei steht nicht zur Verfügung",
+	'ok_material_added' => "Erfolg: Neue Materialien wurden eingelegt",
+	'access_denied' => "Zugriff abgelehnt",
+	'no_info' => "Keine weitere Informationen stehen zur Verfügung",
+	'' => "",
+];

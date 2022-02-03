@@ -1,0 +1,143 @@
+.auth-bckg_1 {
+    background-image: url("../images/app/AuthBackgrounds/auth_bckg_1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.separator {
+    position: absolute;
+    z-index: 0;
+    top: auto;
+    right: 0;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transform: translateZ(0);
+    pointer-events: none
+}
+
+.separator svg {
+    position: absolute;
+    pointer-events: none
+}
+
+.separator-top {
+    top: 0;
+    bottom: auto
+}
+
+.separator-top svg {
+    top: 0
+}
+
+.separator-bottom {
+    top: auto;
+    bottom: 0
+}
+
+.separator-bottom svg {
+    bottom: 0
+}
+
+.border-round-5 {
+    border-radius: 5px;
+}
+
+.border-bottom-round-5 {
+    border-bottom-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+}
+
+.border-round-10 {
+    border-radius: 10px;
+}
+
+.border-round-15 {
+    border-radius: 15px;
+}
+
+.border-round-20 {
+    border-radius: 20px;
+}
+
+.border-round-25 {
+    border-radius: 25px;
+}
+
+.input_rtl {
+    direction: rtl;
+}
+
+.input_req {
+    color: #e52d27;
+}
+
+.profile_img_online {
+    border: 2px solid #1bcfb4;
+}
+
+.profile_img_idle {
+    border: 2px solid #ffa955;
+}
+
+.profile_img_inactive {
+    border: 2px solid #808080;
+}
+
+.fc-header-toolbar {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+input {
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+}
+
+.calendar_loader {
+    position: relative;
+}
+
+.calendar_loader .loader_wrap_s, .calendar_loader .loader_wrap_t {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+div.zabuto_calendar tr.calendar-dow td {
+    height: 51px;
+}
+
+@media only screen and (max-width: 555px) {
+    .fc-event-container {
+        padding: 0 !important;
+        padding-top: 5px !important;
+    }
+
+    .fc-day-header {
+        padding: 0 !important;
+    }
+
+    .fc-day-grid-event {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin: 0 !important;
+    }
+
+    .fc-content-skeleton {
+        padding-bottom: 0 !important;
+    }
+
+    .fc-next-button, .fc-prev-button {
+        padding: 0 !important;
+    }
+}
