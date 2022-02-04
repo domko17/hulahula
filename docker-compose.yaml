@@ -10,11 +10,12 @@ services:
         volumes:
             - ./:/var/www/html
         depends_on:
-            - "database"
+            - "db"
         ports:
             - 80:80
+
     # Database
-    database:
+    db:
         image: mysql:8.0
         volumes:
             - dbdata:/var/lib/mysql
@@ -25,6 +26,7 @@ services:
             MYSQL_USER: ${DB_USERNAME}
         ports:
             - 33061:3306
+
     # Database management
     pma:
         image: phpmyadmin:5.1
@@ -35,9 +37,10 @@ services:
             - PMA_PASSWORD=${DB_PASSWORD}
             - PMA_PORT=${DB_PORT}
         depends_on:
-            - database
+            - db
         ports:
             - 8888:80
+
     # Mailing Server
     mailhog:
         image: mailhog/mailhog
@@ -46,6 +49,5 @@ services:
         ports:
             - 1025:1025
             - 8025:8025
-
 volumes:
     dbdata:
