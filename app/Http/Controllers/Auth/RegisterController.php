@@ -72,13 +72,13 @@ class RegisterController extends Controller
         ]);
 
         $name = explode(' ', $user->name);
+        $lastName = str_replace($name[0],'', $user->name);
 
         $profile = new Profile();
         $profile->user_id = $user->id;
         $profile->first_name = $name[0];
-        $profile->last_name = isset($name[1]) ? $name[1] : " ";
+        $profile->last_name = isset($lastName) ? $lastName : " ";
         $profile->phone = $data['phone'];
-        $profile->locale = $data['locale'];
         $profile->save();
 
         $user->attachRole('guest');

@@ -96,13 +96,6 @@
                                 </div>
                             </h3>
                             <hr>
-                            @if(\Illuminate\Support\Facades\Request::cookie("FTWeb-User"))
-                                <h4>@lang('auth.login_welcome_known_greeting', ["name" => \Illuminate\Support\Facades\Request::cookie("FTWeb-User")])</h4>
-                                <h6 class="font-weight-light">{!! __('auth.login_welcome_known_message') !!}</h6>
-                            @else
-                                <h4>{{ __('auth.login_welcome_unknown_greeting') }}</h4>
-                                <h6 class="font-weight-light">{!! __('auth.login_welcome_unknown_message') !!}</h6>
-                            @endif
                             <form class="pt-3" method="POST" action="{{ route('login') }}">
                                 @csrf
 

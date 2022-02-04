@@ -64,7 +64,7 @@ class LoginController extends Controller
                 $this->incrementLoginAttempts($request);
                 return redirect()
                     ->back()
-                    ->with(['message' => 'Vaše konto bolo deaktivované. Pre viac informácií, prosím kontaktuje Vojtech.paumer@gmail.com',
+                    ->with(['message' => 'Your account has been deactivated. For more information, please contact Vojtech.paumer@gmail.com',
                         "msg_type" => "info"]);
             }
         }
@@ -73,7 +73,6 @@ class LoginController extends Controller
         // to login and redirect the user back to the login form. Of course, when this
         // user surpasses their maximum number of attempts they will get locked out.
         $this->incrementLoginAttempts($request);
-
         return $this->sendFailedLoginResponse($request);
     }
 
