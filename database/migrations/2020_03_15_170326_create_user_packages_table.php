@@ -19,6 +19,9 @@ class CreateUserPackagesTable extends Migration
             $table->integer('state')->nullable(false)->default(0)->comment('0-unused, 1-active, 2-ending_soon, 3-used, 4-renewal');
             $table->bigInteger('renewal_package_id')->nullable(true);
             $table->bigInteger('last_class_id')->nullable(true);
+            $table->bigInteger('user_id')->nullable(true);
+            $table->bigInteger('classes_left')->nullable(true);
+
             $table->timestamps();
         });
     }

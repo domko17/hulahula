@@ -81,7 +81,7 @@ class RegisterController extends Controller
         $profile->phone = $data['phone'];
         $profile->save();
 
-        $user->attachRole('guest');
+//        $user->attachRole('guest');
 
         $free_package = new UserPackage();
         $free_package->user_id = $user->id;
