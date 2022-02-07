@@ -21,7 +21,9 @@ class CreateTeacherHoursTable extends Migration
             $table->time('class_end');
             $table->bigInteger("language_id");
             $table->tinyInteger("class_difficulty")->comment("1-5 | A1-C1");
-            $table->boolean('active');
+            $table->integer('class_limit')->nullable(false)->default(1);
+            $table->boolean('active')->nullable(true)->default(1);
+            $table->tinyInteger('one_time')->nullable(true)->default(0);
             $table->timestamps();
         });
     }

@@ -21,7 +21,6 @@ class CreateUserPackagesTable extends Migration
             $table->bigInteger('last_class_id')->nullable(true);
             $table->bigInteger('user_id')->nullable(true);
             $table->bigInteger('classes_left')->nullable(true);
-
             $table->timestamps();
         });
     }

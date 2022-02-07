@@ -22,6 +22,8 @@ class CreateGiftcodesTable extends Migration
             $table->boolean("used")->default(false);
             $table->integer("used_by")->nullable(true)->comment("user_id");
             $table->text("comment")->nullable(true);
+            $table->integer('package_id')->nullable(true)->default(0);
+            $table->integer('package_class_count')->nullable(true)->default(0);
             $table->timestamps();
         });
     }

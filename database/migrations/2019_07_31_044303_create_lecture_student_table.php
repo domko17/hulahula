@@ -17,6 +17,10 @@ class CreateLectureStudentTable extends Migration
             $table->bigIncrements('id');
             $table->bigInteger('class_id');
             $table->bigInteger('student_id');
+            $table->integer('repeat')->nullable(false)->default(0);
+            $table->integer('canceled')->nullable(false)->default(0);
+            $table->smallInteger('package_used')->nullable(true)->default(0);
+            $table->smallInteger('language_id')->nullable(true)->default(0);
             $table->timestamps();
         });
     }

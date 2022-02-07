@@ -17,6 +17,7 @@ class CreateStudentsAndTeachersTable extends Migration
             $table->bigIncrements('id');
             $table->bigInteger('user_id');
             $table->bigInteger('language_id');
+            $table->integer('level')->nullable(true)->default(1);
             $table->timestamps();
         });
 
