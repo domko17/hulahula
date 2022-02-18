@@ -15,6 +15,7 @@ return [
 	'Status' => "Stav",
 	'Actions' => "Akcie",
 	'actions' => "Akcie",
+    'package' => "Balíček",
 	'edit' => "Editovať",
 	'locale_change' => "Zmeniť jazyk",
 	'Cancel' => "Zrušiť",

@@ -15,6 +15,7 @@ return [
 	'Status' => "Cостояние",
 	'Actions' => "Акция",
 	'actions' => "Акция",
+    'package' => "Упаковка",
 	'locale_change' => "Изменение языка",
 	'Cancel' => "Отмена",
 	'Save' => "Сохранить",

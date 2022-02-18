@@ -15,6 +15,7 @@ return [
 	'Status' => "Status",
 	'Actions' => "Actions",
 	'actions' => "Actions",
+    'package' => "Paquete",
 	'edit' => "Edit",
 	'locale_change' => "Change language",
 	'Cancel' => "Cancel",

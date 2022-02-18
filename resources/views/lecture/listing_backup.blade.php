@@ -64,7 +64,7 @@
                                 <td>{{ $l->language->name_en }} ({{ $l->hour->class_difficulty }})
                                 </td>
                                 <td>
-                                    <b>{{$l->class_date}}</b>{{-- \Carbon\Carbon::createFromFormat("Y-m-d", $l->class_date)->format("d,M Y") --}}
+                                    <b>{{\Carbon\Carbon::createFromFormat("Y-m-d", $l->class_date)->format("d,M Y")}}</b>
                                 </td>
                                 <td>{{ substr($l->hour->class_start, 0, 5) }}</td>
                                 <td>{{ substr($l->hour->class_end, 0, 5) }}</td>
@@ -160,7 +160,7 @@
                                     <td>{{ $l->language->name_en }} ({{ $l->hour->class_difficulty }})
                                     </td>
                                     <td>
-                                        <b>{{$l->class_date}}</b>{{-- \Carbon\Carbon::createFromFormat("Y-m-d", $l->class_date)->format("d,M Y") --}}
+                                        <b>{{\Carbon\Carbon::createFromFormat("Y-m-d", $l->class_date)->format("d,M Y")}}</b>
                                     </td>
                                     <td>{{ substr($l->hour->class_start, 0, 5) }}</td>
                                     <td>{{ substr($l->hour->class_end, 0, 5) }}</td>

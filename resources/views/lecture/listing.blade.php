@@ -28,13 +28,11 @@
     </div>
 
     <div class="row">
-
         @include('lecture.components.tables_filter')
 
         @include('lecture.components.tables_past_classes')
 
         @include('lecture.components.tables_future_classes')
-
     </div>
 
     @include('lecture.components.modals')
@@ -52,15 +50,11 @@
 
 @section('page_scripts')
     <script src="{{ asset('vendors/chosen/chosen.jquery.js') }}"></script>
-
     <script>
-
         $(document).ready(function () {
-
             $("#day").chosen({
                 width: "100%"
             });
-
             if (window.mobilecheck()) {
                 $('#lectures_past_mobile').show();
                 $('#lectures_past_mobile').DataTable({
@@ -141,7 +135,6 @@
                 });
             }
 
-
             $("#language").change(function () {
                 let val = $("#language option:selected").val();
                 $.ajax({
@@ -159,21 +152,17 @@
                                 $(this).animate()
                             })
                         });
-
                         $("#teacher_select").empty();
                         $("#sub_teacher_select").empty();
                         $("#teacher_select").append($("<option></option>").attr("value", 0).html("..."));
                         $("#sub_teacher_select").append($("<option></option>").attr("value", 0).html("..."));
                         for (var data in response.data) {
-//console.log(response.data[data]);
                             $("#teacher_select").append($("<option></option>").attr("value", response.data[data].id).html(response.data[data].name));
                             $("#sub_teacher_select").append($("<option></option>").attr("value", response.data[data].id).html(response.data[data].name));
                         }
-                        ;
                     }
                 })
             })
         })
-
     </script>
 @stop

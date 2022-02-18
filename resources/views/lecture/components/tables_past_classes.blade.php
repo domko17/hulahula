@@ -14,7 +14,7 @@
                     <th></th>
                     <th> @lang('general.detail') </th>
                     <th> @lang('general.Date') </th>
-                    <th> Balíček </th>
+                    <th> @lang('general.package') </th>
                     <th> @lang('general.actions') </th>
                 </tr>
                 </thead>
@@ -29,7 +29,7 @@
                                 - {{ substr($l->hour->class_end, 0, 5) }}</td>
                             <td>
                                 @if($l->canceled)
-                                    !ZRUŠENÁ!
+                                    @lang('lecture.canceled')
                                 @endif
                                 <br>
                                 @if(count($l->students) == 1)
@@ -99,7 +99,7 @@
                                 </a>
                             </td>
                             <td>
-                                <b>{{$l->class_date}}</b>{{-- \Carbon\Carbon::createFromFormat("Y-m-d", $l->class_date)->format("d,M Y") --}}
+                                <b>{{\Carbon\Carbon::createFromFormat("Y-m-d", $l->class_date)->format("d,M Y")}}</b>
                             </td>
                             <td>{{ substr($l->hour->class_start, 0, 5) }}
                                 - {{ substr($l->hour->class_end, 0, 5) }}</td>

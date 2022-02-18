@@ -84,7 +84,6 @@ class DashboardController extends Controller
      */
     public function index()
     {
-
         $user = User::find(Auth::id());
 
         $profile = $user->profile;
