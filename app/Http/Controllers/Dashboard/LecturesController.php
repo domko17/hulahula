@@ -40,87 +40,10 @@ class LecturesController extends Controller
      */
     public function index()
     {
-        $query = SchoolClass::orderBy("class_date");
-
-        $filters = 0;
-        if (isset($_GET['f_lang']) and intval($_GET['f_lang']) > 0) {
-            $filters++;
-        }
-        if (isset($_GET['f_type']) and intval($_GET['f_type']) > 0) {
-            if (intval($_GET['f_type']) == 1) {
-                $query->whereNotNull('teacher_hour');
-            } else if (intval($_GET['f_type']) == 2) {
-                $query->whereNotNull('collective_hour');
-            }
-            $filters++;
-        }
-        if (isset($_GET['f_status']) and intval($_GET['f_status']) > 0) {
-            $filters++;
-        }
-        if (isset($_GET['f_student']) and intval($_GET['f_student']) != 0) {
-            $filters++;
-        }
-        if (isset($_GET['f_teacher']) and intval($_GET['f_teacher']) != 0) {
-            $filters++;
-        }
-
-        if (isset($_GET['filtered']) and $filters == 0) {
-            return redirect()->route('lectures.index');
-        }
-
-
-        $res = $query->get();
-
-        $tmp = [];
-
-        $classes_future = [];
-        $classes_past = [];
-
-        if (isset($_GET['filtered'])) {
-            foreach ($res as $c) {
-                $ok = true;
-
-                if ($ok and isset($_GET['f_lang']) and intval($_GET['f_lang']) > 0) {
-                    if ($c->hour->language->id != intval($_GET['f_lang'])) $ok = false;
-                }
-
-                if ($ok and
-                    Carbon::createFromFormat("Y-m-d", $c->class_date) > now() and
-                    isset($_GET['f_status']) and
-                    intval($_GET['f_status']) > 0) {
-                    if (intval($_GET['f_status']) == 1 and !$c->is_free()) $ok = false;
-                    if (intval($_GET['f_status']) == 2 and $c->is_free()) $ok = false;
-                }
-                if ($ok and isset($_GET['f_student']) and intval($_GET['f_student']) != 0) {
-                    if (intval($_GET['f_student']) == -1 and count($c->students) > 0) $ok = false;
-                    else if (intval($_GET['f_student']) > 0 and !$c->is_student_attending(intval($_GET['f_student']))) $ok = false;
-                }
-                if ($ok and isset($_GET['f_teacher']) and intval($_GET['f_teacher']) != 0) {
-                    if (intval($_GET['f_teacher']) == -1 and $c->hour->teacher) $ok = false;
-                    else if (intval($_GET['f_teacher']) > 0 and $c->hour->teacher->id != intval($_GET['f_teacher'])) $ok = false;
-                }
-
-                if ($ok) {
-                    $tmp[] = $c;
-                }
-            }
-        } else $tmp = $res;
-
-        foreach ($tmp as $c) {
-            if (Carbon::createFromFormat("Y-m-d", $c->class_date) < now()) {
-                $classes_past[] = $c;
-            } else {
-                $classes_future[] = $c;
-            }
-        }
-
         $languages = Language::all();
-
         $teachers = User::all();
 
         return view('lecture.listing')
-            ->with('lectures_f', $classes_future)
-            ->with('lectures_p', $classes_past)
             ->with('languages', $languages)
             ->with('teachers', $teachers);
     }

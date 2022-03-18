@@ -26,13 +26,12 @@
             </ul>
         </nav>
     </div>
-
     <div class="row">
         @include('lecture.components.tables_filter')
 
         @include('lecture.components.tables_past_classes')
 
-        @include('lecture.components.tables_future_classes')
+{{--        @include('lecture.components.tables_future_classes')--}}
     </div>
 
     @include('lecture.components.modals')
@@ -48,6 +47,33 @@
     </style>
 @stop
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @section('page_scripts')
     <script src="{{ asset('vendors/chosen/chosen.jquery.js') }}"></script>
     <script>
@@ -59,8 +85,8 @@
                 $('#lectures_past_mobile').show();
                 $('#lectures_past_mobile').DataTable({
                     "aLengthMenu": [
-                        [5, 10, 15, -1],
-                        [5, 10, 15, "All"]
+                        [5, 10, 15, 50, 100],
+                        [5, 10, 15, 50, 100]
                     ],
                     "iDisplayLength": 5,
                     "language": dt_language,
@@ -78,8 +104,8 @@
                 $('#lectures_future_mobile').show();
                 $('#lectures_future_mobile').DataTable({
                     "aLengthMenu": [
-                        [5, 10, 15, -1],
-                        [5, 10, 15, "All"]
+                        [5, 10, 15, 50, 100],
+                        [5, 10, 15, 50, 100]
                     ],
                     "iDisplayLength": 5,
                     "language": dt_language,
@@ -98,8 +124,8 @@
                 $('#lectures_past_pc').show();
                 $('#lectures_past_pc').DataTable({
                     "aLengthMenu": [
-                        [5, 10, 15, -1],
-                        [5, 10, 15, "All"]
+                        [5, 10, 15, 50, 100],
+                        [5, 10, 15, 50, 100]
                     ],
                     "iDisplayLength": 5,
                     "language": dt_language,
@@ -117,8 +143,8 @@
                 $('#lectures_future_pc').show();
                 $('#lectures_future_pc').DataTable({
                     "aLengthMenu": [
-                        [5, 10, 15, -1],
-                        [5, 10, 15, "All"]
+                        [5, 10, 15, 50, 100],
+                        [5, 10, 15, 50, 100]
                     ],
                     "iDisplayLength": 5,
                     "language": dt_language,

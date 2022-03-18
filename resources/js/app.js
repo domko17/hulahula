@@ -1,5 +1,9 @@
 import { createApp } from 'vue';
 
-import App from "./components/App.vue";
+import LecturesPast from "./components/LecturesPast.vue";
+import LecturesFuture from "./components/LecturesFuture.vue";
 
-createApp(App).mount('#example')
+createApp(LecturesPast).mount('#lecture_past')
+createApp(LecturesFuture).mount('#lecture_future')
+
+

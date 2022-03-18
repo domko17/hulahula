@@ -38,7 +38,7 @@ class AjaxController extends Controller
 {
     public function __construct()
     {
-        $this->middleware("auth");
+//        $this->middleware("auth");
     }
 
     /**
@@ -51,7 +51,6 @@ class AjaxController extends Controller
      */
     function handle(Request $request)
     {
-
         /**
          * Request have to contain 'action'
          */

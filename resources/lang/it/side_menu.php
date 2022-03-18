@@ -4,6 +4,7 @@ return [
 	'Languages' => "Languages",
 	'Users' => "System users",
 	'Lections' => "Lectures",
+    'School' => "School",
 	'Emails' => "Email queue",
 	'profile' => "My profile",
 	'dashboard' => "Dashboard",

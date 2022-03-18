@@ -4,6 +4,7 @@ return [
 	'Languages' => "Jazyky",
 	'Users' => "Systémoví používatelia",
 	'Lections' => "Hodiny",
+    'School' => "Škola",
 	'Emails' => "Email fronta",
 	'profile' => "Môj profil",
 	'dashboard' => "Dashboard",

@@ -38,7 +38,7 @@
                 <div class="card-body p-2 p-md-4">
                     <h4 class="card-title">
                         <i class="flag-icon {{ $language->icon }}"></i> @lang('language.word_cards') ({{ count($cards) }})
-                        <a href="{{ route("admin.word_cards.create", $language->id) }}" class="btn btn-gradient-success pull-right btn-sm">
+                        <a href="{{ route("admin.word_cards1.create", $language->id) }}" class="btn btn-gradient-success pull-right btn-sm">
                             <i class="fa fa-plus"></i> @lang('language.word_card_new')
                         </a>
                     </h4>

@@ -22,7 +22,7 @@
                         </div>
                         <div class="row mt-5">
                             <div class="col-12 mt-xl-2">
-                                <p class="text-white font-weight-medium text-center">Copyright &copy; {{ now()->year }}  Všetky práva vyhradené.</p>
+                                <p class="text-white font-weight-medium text-center">Copyright &copy; {{ now()->year }}</p>
                             </div>
                         </div>
                     </div>

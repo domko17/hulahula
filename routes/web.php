@@ -86,7 +86,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth']], 
     //Route::post('/star-orders/sign-as-paid/{id}', 'Admin\StarOrderController@signAsPaid')->name('star-orders.sign_as_paid');
     Route::resource('/word_cards', "Admin\WordCardsController");
     Route::get('/word_cards/language/{id}', "Admin\WordCardsController@indexLanguage")->name("word_cards.index_language");
-    Route::get('/word_cards/language/{id}/create', "Admin\WordCardsController@create")->name("word_cards.create");
+    Route::get('/word_cards/language/{id}/create', "Admin\WordCardsController@create")->name("word_cards1.create");
     Route::resource("/gift_codes", "Admin\GiftCodeController");
     Route::resource('/meetings', 'Admin\MeetingController');
     Route::resource('/banners', 'Admin\BannerPostController');

@@ -6,7 +6,7 @@ use App\Models\User\TeacherHour;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Log;
 
-include("phpqrcode.php");
+include(app_path().'/phpqrcode.php');
 
 class Helper
 {

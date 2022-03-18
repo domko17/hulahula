@@ -17,7 +17,7 @@ class CreateCollectiveHoursTable extends Migration
             $table->bigIncrements('id');
             $table->bigInteger('user_id')->comment("teacher_id");
             $table->bigInteger('sub_user_id')->comment("teacher_sub_id");
-            $table->date("day")->comment("1-5 | Mon-Fri");
+            $table->string("day", 255)->comment("1-5 | Mon-Fri");
             $table->time("class_start");
             $table->time('class_end');
             $table->bigInteger("language_id");

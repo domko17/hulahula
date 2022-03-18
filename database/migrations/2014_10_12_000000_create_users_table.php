@@ -22,6 +22,7 @@ class CreateUsersTable extends Migration
             $table->dateTime('last_activity')->nullable();
             $table->tinyInteger('active')->nullable(true)->default(1);
             $table->integer('theme')->nullable(true)->default(1);
+            $table->string('api_token');
             $table->rememberToken();
             $table->timestamps();
         });

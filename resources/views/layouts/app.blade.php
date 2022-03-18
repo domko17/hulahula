@@ -70,16 +70,16 @@
 
                     @yield('content')
 
-                    <div class="alert alert-info">
-                        Aplikácia je vo verzii <b>&beta; {{env('APP_VERSION')}}</b><br>
-                        Prosím akékoľvek pripomienky, problémy alebo iné otázky pošlite emailom na adresu <a
-                            href="mailto: paumer@hulahula.sk"
-                            class="text-info"><b>paumer@hulahula.sk</b></a>.
-                    </div>
+{{--                    <div class="alert alert-info">--}}
+{{--                        Aplikácia je vo verzii <b>&beta; {{env('APP_VERSION')}}</b><br>--}}
+{{--                        Prosím akékoľvek pripomienky, problémy alebo iné otázky pošlite emailom na adresu <a--}}
+{{--                            href="mailto: paumer@hulahula.sk"--}}
+{{--                            class="text-info"><b>paumer@hulahula.sk</b></a>.--}}
+{{--                    </div>--}}
 
                     <footer class="footer">
                         <div class="d-sm-flex justify-content-center justify-content-sm-between">
-                            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2022 HulaHula s.r.o Všetky práva vyhradené. </span>
+                            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2022 HulaHula s.r.o</span>
                         </div>
                     </footer>
                 </div>
